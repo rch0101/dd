@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+     <form class="login-form" id="loginForm" novalidate method="POST">
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="text" id="fecha" name="fecha" required autocomplete="fecha">
+                         <label for="fecha">Fecha</label>
+                        
+                        <span class="input-line"></span>
+                    </div>
+                    <span class="error-message" id="fechaError"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-wrapper password-wrapper">
+                        <input type="password" id="password" name="password" required autocomplete="current-password">
+                        <label for="password">Contraseña</label>
+                        <button type="button" class="password-toggle" id="passwordToggle" aria-label="Toggle password visibility" >
+                            <span class="toggle-icon"></span>
+                        </button>
+                        <span class="input-line"></span>
+                    </div>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+               
+
+                <button type="button" class="login-btn btn"  onclick="loguear()">
+                    <span class="btn-text">Iniciar</span>
+                    <span class="btn-loader"></span>
+                    <span class="btn-glow"></span>
+                </button>
+            </form>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
